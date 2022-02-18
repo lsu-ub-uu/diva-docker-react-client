@@ -1,4 +1,4 @@
-FROM fedora:34 as builder
+FROM fedora:35 as builder
 
 ARG BASE_URL
 ENV BASE_URL=$BASE_URL
