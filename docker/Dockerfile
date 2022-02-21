@@ -1,15 +1,9 @@
-FROM fedora:35 as builder
+FROM alpine:latest as builder
 
 ARG BASE_URL
 ENV BASE_URL=$BASE_URL
 
-RUN dnf clean all && \
-  dnf install \
-  git \
-  nodejs \
-  npm -y && \
-  dnf clean all
-
+RUN apk add --no-cache git nodejs npm
 
 RUN npm install npm@latest -g
 
