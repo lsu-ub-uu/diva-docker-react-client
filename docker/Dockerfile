@@ -15,6 +15,8 @@ WORKDIR diva-react-client
 
 RUN git pull
 
+RUN git log
+
 RUN npm install
 
 RUN npm run coverage:deploy
