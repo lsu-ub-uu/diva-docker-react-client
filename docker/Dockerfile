@@ -1,7 +1,9 @@
 FROM alpine:latest as builder
 
 ARG BASE_URL
+ARG BASENAME
 ENV BASE_URL=$BASE_URL
+ENV BASENAME=$BASENAME
 
 RUN apk add --no-cache git nodejs npm
 
