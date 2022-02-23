@@ -15,7 +15,7 @@ WORKDIR diva-react-client
 
 RUN git pull
 
-RUN git log
+RUN git log --name-status HEAD^..HEAD
 
 RUN npm install
 
