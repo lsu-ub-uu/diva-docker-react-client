@@ -1,7 +1,7 @@
 #!/bin/bash
 
 BASE_URL=${1:-'https://cora.test.diva-portal.org/diva/rest/'}
-BASENAME=${2:-''}
+BASENAME=${2:-'/'}
 
 echo Building diva-docker-react-client with BASE_URL $BASE_URL and BASENAME $BASENAME
 
