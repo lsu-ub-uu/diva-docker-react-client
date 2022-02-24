@@ -17,8 +17,6 @@ RUN git status
 
 RUN git pull
 
-RUN git checkout origin/multiModuleTest
-
 RUN git log --name-status HEAD^..HEAD
 
 WORKDIR diva-cora-ts-api-wrapper
