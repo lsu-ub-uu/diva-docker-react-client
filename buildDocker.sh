@@ -11,4 +11,4 @@ echo Building diva-docker-react-client with BASE_URL $BASE_URL, BASENAME $BASENA
 docker build --no-cache --pull \
     --build-arg BASE_URL=$BASE_URL \
     --build-arg BASENAME=$BASENAME \
-    -t $VERSION ./docker
+    -t $TAG ./docker
