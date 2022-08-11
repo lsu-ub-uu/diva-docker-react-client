@@ -29,7 +29,8 @@ Default: `latest`
 ## Result
 Running the above command will
   - create an intermediate docker to which [diva-react-client](https://github.com/lsu-ub-uu/diva-react-client) will be cloned
-  - all three projects within diva-react-client will be installed and built
+  - all three projects within diva-react-client will be installed, cora-ts-api-wrapper and diva-resource-fetcher will be built
+  - **the unit tests for diva-react-client have to pass and the coverage has to be 100%.** IF that is the case, the build continues as follows:
   - diva-resource-fetcher will be used to download resources from the given REST_API_BASE_URL
   - diva-react-client will be built containing the downloaded resources and the given BASENAME
   - a final docker container containing the built diva-react-client and an NGINX server. Tagged diva-docker-react-client:VERSION
