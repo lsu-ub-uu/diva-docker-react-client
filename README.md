@@ -24,3 +24,12 @@ Default: `/`
 **VERSION** The docker image will be tagged diva-docker-react-client:VERSION, e.g. diva-docker-react-client:latest.
 
 Default: `latest`
+
+
+## Result
+Running the above command will
+  - create an intermediate docker to which [diva-react-client](https://github.com/lsu-ub-uu/diva-react-client) will be cloned
+  - all three projects within diva-react-client will be installed and built
+  - diva-resource-fetcher will be used to download resources from the given REST_API_BASE_URL
+  - diva-react-client will be built containing the downloaded resources and the given BASENAME
+  - a final docker container containing the built diva-react-client and an NGINX server. Tagged diva-docker-react-client:VERSION
