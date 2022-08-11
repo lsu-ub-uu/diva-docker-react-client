@@ -17,7 +17,7 @@ Default: `https://cora.test.diva-portal.org/diva/rest/`
 
 **BASENAME** depends on how you want diva-react-clients URL to look like. It's the part after the domain. 
 
-If the final URL should be `https://www.example.com/some/other/stuff`, the BASENAME would be /some/other/stuff`.
+If the final URL should be `https://www.example.com/some/other/stuff`, the BASENAME would be `/some/other/stuff`.
 
 Default: `/`
 
